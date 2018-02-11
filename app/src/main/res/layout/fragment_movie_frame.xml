@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.mymoviedb.MovieFrame">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:id="@+id/before">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:layout_marginLeft="400px"
+            android:id="@+id/after"
+            android:layout_marginTop="0px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:id="@+id/current"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:layout_marginTop="200px">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="900px"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOW PLAYING"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/nowPlayingList"
+android:elevation="1dp"
+        android:fadingEdgeLength="1dp"
+        android:outlineProvider="bounds"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+
+        android:scrollbars="vertical"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POPULAR MOVIES"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/popularMovieList"
+        android:elevation="1dp"
+        android:fadingEdgeLength="1dp"
+        android:outlineProvider="bounds"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+
+        android:layout_height="0px"
+
+        android:scrollbars="vertical"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOP RATED"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/TopRatedMovieList"
+        android:elevation="1dp"
+        android:fadingEdgeLength="1dp"
+        android:outlineProvider="bounds"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        />       </LinearLayout>
+
+    <!--<ListView-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent"-->
+       <!--android:id="@+id/movieList"></ListView>-->
+
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>
